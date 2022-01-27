@@ -1,4 +1,12 @@
 import './books.css';
+import { useDispatch } from 'react-redux';
+import { removeBook, Book } from '../redux/books/books';
+
+const dispatch = useDispatch();
+
+const removeBookFromStore = () => {
+  dispatch(removeBook(Book));
+};
 
 const Books = () => (
   <div className="Lesson-Panel">
@@ -8,7 +16,7 @@ const Books = () => (
       <span className="author">Suzanne-Collins</span>
       <div className="options">
         <span className="actions">Comments</span>
-        <span className="actions">Remove</span>
+        <span className="actions" onClick={removeBookFromStore}>Remove</span>
         <span className="actions">Edit</span>
       </div>
     </div>

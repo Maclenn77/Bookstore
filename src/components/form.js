@@ -1,4 +1,12 @@
 import './form.css';
+import { useDispatch } from 'react-redux';
+import { addBook, Book } from '../redux/books/books';
+
+const dispatch = useDispatch();
+
+const submitBookToStore = () => {
+  dispatch(addBook(Book));
+};
 
 const Form = () => (
   <form className="add-form">
@@ -6,7 +14,7 @@ const Form = () => (
     <div className="input-area">
       <input type="text" placeholder="Book title" />
       <input type="text" placeholder="Category" />
-      <button type="submit"><span className="ADD-BOOK">ADD BOOK</span></button>
+      <button type="submit" onClick={submitBookToStore}><span className="ADD-BOOK">ADD BOOK</span></button>
     </div>
   </form>
 );
