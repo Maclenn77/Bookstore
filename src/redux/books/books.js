@@ -3,6 +3,14 @@ const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 const initialState = [];
 
+export const bookId = Date.now();
+
+export const Book = {
+  id: bookId,
+  title: 'APIs: A Strategy Guide',
+  author: 'Daniel Jacobson',
+};
+
 export const addBook = (payload) => ({
   type: ADD_BOOK,
   payload,
@@ -12,14 +20,6 @@ export const removeBook = (payload) => ({
   type: REMOVE_BOOK,
   payload,
 });
-
-const bookId = Date.now();
-
-export const Book = {
-  id: bookId,
-  title: 'APIs: A Strategy Guide',
-  author: 'Daniel Jacobson',
-};
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
