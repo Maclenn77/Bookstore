@@ -6,9 +6,10 @@
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- JavaScript
+- Html/CSS
+- React & Redux
+- Webpack
 
 ## Live Demo (if available)
 
@@ -17,25 +18,38 @@
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
+`git clone git@github.com:Maclenn77/Bookstore.git`
+
+Or download and unzip
+
 ### Prerequisites
+
+- git
+- npm
+- Code editor (VS Code, Nano, Atom, etc)
 
 ### Setup
 
+- Unzip or copy the files
+
 ### Install
+
+`npm install` to install all the dependencies needed for the project
 
 ### Usage
 
-### Run tests
+`npm start` to launch a development server
+
+`npm run build` to build from src
+
+`npm run lint` to solve lint problems
 
 ### Deployment
 
-
+`npm run deploy` to deploy to gh-pages
 
 ## Authors
 
