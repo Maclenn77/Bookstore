@@ -2,8 +2,7 @@
 
 # Project Name
 
-> Description the project.
-
+> Bookstore is a book catalog where you can add and remove books, using react and redux.
 
 ## Built With
 
