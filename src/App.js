@@ -7,15 +7,17 @@ import {
 import Navbar from './components/navbar';
 import Books from './components/books';
 import Categories from './components/categories';
+import Form from './components/form';
 
 const App = () => (
   <Router>
     <div>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Books />} />
+        <Route exact path="/bookstore" element={<Books />} />
         <Route exact path="/categories" element={<Categories />} />
       </Routes>
+      <Form />
     </div>
   </Router>
 );
