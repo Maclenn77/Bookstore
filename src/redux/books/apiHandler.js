@@ -1,13 +1,12 @@
 const apiUrl = new URL('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/PYDdIwdaCaC3OBHUB5QC/books/');
-const itemURL = (id) => apiUrl + `${id}`;
+const itemURL = (id) => `${apiUrl}${id}`;
 
 export const postBook = async (book) => {
-  console.log(book.item_id + 'postBook');
   const data = {
     item_id: book.item_id,
     title: book.title,
     category: book.category,
-  }
+  };
 
   const response = await fetch(apiUrl, {
     method: 'POST',
@@ -33,7 +32,7 @@ export const deleteBook = async (id) => {
   const response = await fetch(itemURL(id), {
     method: 'DELETE',
     headers: {
-      'Accept': 'application/json; charset=UTF-8',
+      Accept: 'application/json; charset=UTF-8',
     },
     body: JSON.stringify(data),
   });

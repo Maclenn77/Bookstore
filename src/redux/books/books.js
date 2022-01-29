@@ -43,7 +43,6 @@ export const getBookApi = () => async (dispatch) => {
 };
 
 const reducer = (state = initialState, action) => {
-  // let bookArray = [...state];
   switch (action.type) {
     case ADD_BOOK:
       return [...state, action.payload];
