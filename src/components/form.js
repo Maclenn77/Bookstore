@@ -1,30 +1,30 @@
 import React, { useState } from 'react';
 import './form.css';
 import { useDispatch } from 'react-redux';
-import { addBook, bookId } from '../redux/books/books';
+import { addBookApi, bookId } from '../redux/books/books';
 
 const Form = () => {
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
   const titleChange = (e) => { setTitle(e.target.value); };
-  const authorChange = (e) => { setAuthor(e.target.value); };
+  const categoryChange = (e) => { setCategory(e.target.value); };
 
   const dispatch = useDispatch();
   const submitBookToStore = (e) => {
     e.preventDefault();
     const Book = {
-      id: bookId(),
+      item_id: bookId(),
       title,
-      author,
+      category,
     };
-    dispatch(addBook(Book));
+    dispatch(addBookApi(Book));
   };
   return (
     <form className="add-form">
       <h2 className="add-Title">ADD NEW BOOK</h2>
       <div className="input-area">
         <input type="text" value={title} onChange={titleChange} placeholder="Book title" />
-        <input type="text" value={author} onChange={authorChange} placeholder="Author" />
+        <input type="text" value={category} onChange={categoryChange} placeholder="Category" />
         <button type="submit" onClick={submitBookToStore}><span className="ADD-BOOK">ADD BOOK</span></button>
       </div>
     </form>

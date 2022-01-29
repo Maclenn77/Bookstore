@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/books';
+import { removeBookApi } from '../redux/books/books';
 import './books.css';
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();
   const removeBookFromStore = () => {
-    dispatch(removeBook(book.id));
+    dispatch(removeBookApi(book.item_id));
   };
 
   return (
@@ -15,7 +15,7 @@ const Book = ({ book }) => {
       <div className="book-info">
         <span className="School-of">Action</span>
         <h2 className="Title">{book.title}</h2>
-        <span className="author">{book.author}</span>
+        <span className="author">{book.category}</span>
         <div className="options">
           <span className="actions">Comments</span>
           <button type="button" className="actions" onClick={removeBookFromStore}>Remove</button>
@@ -42,9 +42,9 @@ const Book = ({ book }) => {
 
 Book.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.string.isRequired,
+    item_id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
   }).isRequired,
 };
 
