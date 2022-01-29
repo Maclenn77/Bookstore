@@ -6,19 +6,17 @@ import {
 } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Books from './components/books';
-import Form from './components/form';
 import Categories from './components/categories';
+import Form from './components/form';
 
 const App = () => (
   <Router>
     <div>
       <Navbar />
       <Routes>
-        <Route exact path="/books" element={<Books />} />
-        <Route exact path="/" element={<Books />} />
+        <Route exact path="/bookstore" element={<Books />} />
         <Route exact path="/categories" element={<Categories />} />
       </Routes>
-      <hr className="Line" />
       <Form />
     </div>
   </Router>
