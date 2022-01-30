@@ -1,8 +1,12 @@
+.bg {
+  background-color: #e8e8e8;
+}
+
 .Lesson-Panel {
   display: flex;
-  width: 75rem;
+  width: 80%;
   height: 10.625rem;
-  margin: 2.313rem 6.25rem 0;
+  margin: 0 auto 2.5rem auto;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
@@ -67,8 +71,10 @@
   height: 4.25rem;
   border-style: solid;
   border-width: 5px;
-  border-image-source: linear-gradient(to bottom, #307bbe, #379cf6);
   border-image-slice: 1;
+  border-radius: 100%;
+  border-right-color: #307bbe;
+  border-bottom-color: #307bbe;
 }
 
 .percent-graphic {
@@ -168,4 +174,10 @@ button.actions {
   cursor: pointer;
   overflow: hidden;
   outline: none;
+}
+
+.Line-2 {
+  margin: auto;
+  width: 90%;
+  border: solid 0.1rem #afafaf;
 }

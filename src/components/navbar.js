@@ -5,14 +5,16 @@ const Navbar = () => (
   <nav className="panel-bg">
     <h1 className="navbrand">Bookstore CMS</h1>
     <ul>
-      <li className="BOOKS">
-        <Link to="/bookstore">BOOKS</Link>
+      <li>
+        <Link to="/bookstore" className="BOOKS">BOOKS</Link>
       </li>
-      <li className="CATEGORIES">
-        <Link to="/categories">CATEGORIES</Link>
+      <li>
+        <Link to="/categories" className="CATEGORIES">CATEGORIES</Link>
       </li>
     </ul>
+    <div className="Oval"><span className="login">@</span></div>
   </nav>
+
 );
 
 export default Navbar;

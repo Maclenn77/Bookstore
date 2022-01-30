@@ -23,8 +23,8 @@ const Form = () => {
     <form className="add-form">
       <h2 className="add-Title">ADD NEW BOOK</h2>
       <div className="input-area">
-        <input type="text" value={title} onChange={titleChange} placeholder="Book title" />
-        <input type="text" value={category} onChange={categoryChange} placeholder="Category" />
+        <input type="text" value={title} onChange={titleChange} placeholder="Book title" id="title" />
+        <input type="text" value={category} onChange={categoryChange} placeholder="Category" id="category" />
         <button type="submit" onClick={submitBookToStore}><span className="ADD-BOOK">ADD BOOK</span></button>
       </div>
     </form>

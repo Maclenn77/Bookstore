@@ -1,10 +1,27 @@
 .add-form {
-  width: 80%;
+  width: 90%;
+  margin: auto;
+}
+
+input {
+  height: 2rem;
+  border-color: #fafafa;
+  border-style: solid;
+}
+
+input#title {
+  width: 40%;
+}
+
+input#category {
+  width: 20%;
 }
 
 .input-area {
   display: flex;
+  height: 5rem;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .add-Title {
@@ -21,11 +38,11 @@
 }
 
 button {
-  width: 25%;
-  height: 2.813rem;
+  width: 15%;
   margin: 1.188rem 0 0 2.125rem;
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
+  border-style: none;
   background-color: #0290ff;
 }
 

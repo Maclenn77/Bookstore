@@ -14,10 +14,11 @@ const Books = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg">
       {books.map((book) => (
         <Book key={book.item_id} book={book} />
       ))}
+      <div className="Line-2" />
       <Form />
     </div>
   );
