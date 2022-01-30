@@ -1,14 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 body {
-  margin: 0 5vh 0 5vh;
+  background-color: #e8e8e8;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
+    Montserrat,
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
@@ -24,4 +24,8 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+div {
+  background-color: none;
 }

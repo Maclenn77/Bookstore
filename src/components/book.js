@@ -17,9 +17,9 @@ const Book = ({ book }) => {
         <h2 className="Title">{book.title}</h2>
         <span className="author">{book.category}</span>
         <div className="options">
-          <span className="actions">Comments</span>
+          <span className="actions">Comments |</span>
           <button type="button" className="actions" onClick={removeBookFromStore}>Remove</button>
-          <span type="button" className="actions">Edit</span>
+          <span type="button" className="actions">|  Edit</span>
         </div>
       </div>
       <div className="percent-graphic">

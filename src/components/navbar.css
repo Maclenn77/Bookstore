@@ -1,11 +1,18 @@
+nav {
+  border-bottom: solid 2px #b8b8b8;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+
+.Line {
+  width: 100%;
+  border: solid 1px #afafaf;
+}
+
 .panel-bg {
   display: flex;
-  width: 80vh;
-  height: 5.938rem;
-  margin: 0 0 2.375rem;
-  padding: 1.438rem 6.188rem 1.688rem 6.25rem;
-  background-color: #fff;
-  border-bottom: solid 1px #e8e8e8;
+  height: 3rem;
+  padding: 1.438rem 6.188rem 0.061rem 6.25rem;
 }
 
 .navbrand {
@@ -39,12 +46,13 @@ a:visited {
 
 a.BOOKS,
 a.BOOKS:visited {
-  color: var(--black-two);
+  color: #121212;
 }
 
 a.CATEGORIES {
   width: 6.563rem;
-  color: var(--black-two);
+  color: #121212;
+  opacity: 0.5;
 }
 
 ul {
@@ -53,4 +61,17 @@ ul {
 
 li {
   display: inline;
+}
+
+.Oval {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.5rem;
+  margin-left: auto;
+  border: solid 2px #e8e8e8;
+  border-radius: 100%;
+}
+
+.login {
+  color: #0290ff;
 }
