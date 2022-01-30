@@ -14,7 +14,7 @@ const Navbar = () => (
     </ul>
     <div className="Oval"><span className="login">@</span></div>
   </nav>
-  
+
 );
 
 export default Navbar;

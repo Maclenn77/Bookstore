@@ -7,11 +7,11 @@ import {
 import Navbar from './components/navbar';
 import Books from './components/books';
 import Categories from './components/categories';
-import './App.css'
+import './App.css';
 
 const App = () => (
   <Router>
-    <div className='bg'>
+    <div className="bg">
       <Navbar />
       <Routes>
         <Route exact path="/bookstore" element={<Books />} />
