@@ -6,7 +6,7 @@ const Navbar = () => (
     <h1 className="navbrand">Bookstore CMS</h1>
     <ul>
       <li className="BOOKS">
-        <Link to="/books">BOOKS</Link>
+        <Link to="/bookstore">BOOKS</Link>
       </li>
       <li className="CATEGORIES">
         <Link to="/categories">CATEGORIES</Link>
